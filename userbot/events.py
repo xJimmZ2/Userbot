@@ -64,6 +64,8 @@ def register(**args):
                 await check.respond("`I don't think this is a group.`")
                 return
 
+            try:
+                await func(check)
 
             # Thanks to @kandnub for this HACK.
             # Raise StopPropagation to Raise StopPropagation
